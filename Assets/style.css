@@ -1,0 +1,21 @@
+
+
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    color: rgb(12, 12, 226) 
+}
+
+p {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.box {
+    border-style: dashed;
+    border-width: 2px;
+}

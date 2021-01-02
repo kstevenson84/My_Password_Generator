@@ -5,10 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPasswordGenerator</title>
     <link rel="stylesheet" type="text/css" href="Assets/style.css">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
 </head>
 <body>
     
+
+
+
+
+
+    <div class="container">
+        <div class="row center-align">
+            <div class="col s12 m12 l12">
+                <h1>Password Generator</h1>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>Click below to generate a password</p>
+            <hr>
+            <!--This is a box for the generated password-->
+            <div class="box">
+                <var>password_text</var>
+            </div>
+            
+            
+            <hr>
+            <div class="inner center-align">
+                <button type="button" onclick="create_password()" class="btn btn-primary btn-sm">Create Password</button>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
 </body>
+
 
 <script src="Assets/Script.js"></script>
 
