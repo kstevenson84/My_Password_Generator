@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Assets/Script.js" defer></script>
+    <link rel="stylesheet" href="Assets/style.css">
     <title>MyPasswordGenerator</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
-
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
 </head>
+
 <body>
-    
-
-
-
-
-
     <div class="container">
-        <div class="row center-align">
-            <div class="col s12 m12 l12">
-                <h1>Password Generator</h1>
+        <h1 class="title">Password Generator</h1>
+        <!-- Displayed Password -->
+        <h3 class="password-display" id="passwordDisplay">password</h3>
+        <form id="passwordGeneratorForm" class="form">
+            <label for="characterAmountNumber">Number Of Characters</label>
+            <div class="character-amount-container">
+                <input type="range" min="8" max="128" value="10" 
+                id="characterAmountRange">
+                <input class="number-input" type="number" min="8" max="128" value="10" 
+                id="characterAmountNumber">
             </div>
-        </div>
+            <!-- Additional password characters -->
+            <label for="includeUpperCase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
 
-        <div class="card">
-            <p>Click below to generate a password</p>
-            <hr>
-            <!--This is a box for the generated password-->
-            <div class="box">
-                <var>password_text</var>
-            </div>
-            
-            
-            <hr>
-            <div class="inner center-align">
-                <button type="button" onclick="create_password()" class="btn btn-primary btn-sm">Create Password</button>
-            </div>
-            
+            <label for="inludesNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
 
-        </div>
+            <label for="inludesSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+            <!-- Button -->
+            <button type="submit" class="btn">Generate Password</button>
+
+        </form>
 
     </div>
     
 </body>
-
-
-<script src="Assets/Script.js"></script>
 
 </html>
