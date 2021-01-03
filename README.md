@@ -13,4 +13,4 @@ Created a random password generator for greater security, utilizing numbers, upp
 An image of the website is below:
 ![alt text](Assets/screenshot.png)
 
-Special thanks to Kyle https://www.youtube.com/watch?v=iKo9pDKKHnc  for help with design. 
+Special thanks to Web Dev Simplified on YouTube for help with design. 
